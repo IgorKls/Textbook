@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "cBox";
+  font-display: swap;
+  src: url("../fonts/C_BOX.woff") format("woff"), url("../fonts/C_BOX.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #525659;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__inner {
+  width: 100%;
+  height: 30px;
+  background-color: #185ABD;
+}
+
+.header__inner .title {
+  color: #fff;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.sidebar__menu {
+  background-color: #323639;
+  height: calc(100vh - 30px);
+}
+
+.sidebar__menu {
+  max-width: 200px;
+}
+
+.menu {
+  padding: 20px 0 20px 20px;
+}
+
+.list {
+  margin-left: 10px;
+}
+
+.list__item {
+  list-style-type: disc;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.arrow.active {
+  -webkit-transform: translateX(10px) rotate(90deg);
+      -ms-transform: translateX(10px) rotate(90deg);
+          transform: translateX(10px) rotate(90deg);
+}
+
+.outgoing--list {
+  -webkit-transform: translateX(-150%);
+      -ms-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.outgoing--list.visible {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
