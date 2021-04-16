@@ -1,0 +1,81 @@
+<!-- файлы с приставкой "_" не отправляются на сборку и игнорируются gulp, их нужно подключать вручную(как в index.html) -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебник</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Подключение минимизированных версий стилей:  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- полные версии также сохраняются в папке сборки -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <h1 class="title">Электронный учебник информатики</h1>
+        </div>
+    </div>
+</header>
+<div class="flex-container">
+<div class="sidebar">
+    <div class="container">
+        <div class="sidebar__inner">
+            <div class="sidebar__menu menu">
+                <div class="menu__item">
+                    <ul class="list">
+                        <a href="index.html"><li class="list__item">Главная (введение)</li></a>
+                        <a href="" id="chapter-toggle"><li class="list__item">Главы <span class="arrow"><p>></p></span></li></a>
+                        <ul class="list outgoing--list">
+                            <a href="chapter_1.html">
+                                <li class="list__item">Глава 1. Информация</li>
+                            </a>
+                            <a href="chapter_2.html">
+                                <li class="list__item">Глава 2. Аппапатура</li>
+                            </a>
+                            <a href="chapter_3.html">
+                                <li class="list__item">Глава 3. Программы</li>
+                            </a>
+                        </ul>
+                        <a href="quiz.html"><li class="list__item">Тест</li></a>
+                        <a href="sources.html"><li class="list__item">Источники</li></a>
+                        <a href="about.html"><li class="list__item">Информация о разработчиках</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="main">
+
+    <div class="chapterTitle">
+        Информация о разработчиках
+    </div>
+    <div class="main__text">
+        <p class="centered-text about">Данный сайт создан студентами ГБПОУ ТХТК, группы 3ИС-29/18 Колесниковым Игорем, Великотным Кириллом и Вороновым Иваном в целях обучения и получения практических знаний и опыта в создании сайтов.</p>
+    </div>
+</main>
+
+</div>
+    
+
+    <!-- Подключение минимизированных версий скриптов: -->
+    <script src="assets/js/script.min.js"></script>
+    <!-- полные версии также сохраняются в папке сборки -->
+</body>
+<footer class="footer">
+    <div class="footer__container">
+        <p>2021 ГБПОУ «ТХТК»</p>
+    </div>
+</footer>
+</html>
